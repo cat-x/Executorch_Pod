@@ -1,0 +1,30 @@
+//module Executorch {
+//  umbrella header "executorch/ExecuTorch.h"
+//////  umbrella header "c10"
+////  umbrella header "executorch/extension"
+////  umbrella header "executorch/runtime"
+////  umbrella header "executorch/schema"
+////
+////  // 显式包含所有需要的头文件
+////  header "executorch/ExecuTorch.h"
+////  header "executorch/ExecuTorchError.h"
+////  header "executorch/ExecuTorchLog.h"
+////  header "executorch/ExecuTorchModule.h"
+////  header "executorch/ExecuTorchTensor.h"
+////  header "executorch/ExecuTorchValue.h"
+//////  header "executorch/extension/module/module.h"
+//////  header "executorch/extension/tensor/tensor.h"
+//
+//  export *
+//  module * {
+//    export *
+//  }
+//  requires cplusplus    // 需要 C++
+//  requires objc         // 需要 Objective-C
+//}
+
+module Executorch {
+  umbrella header "ExecuTorch/ExecuTorch.h"
+
+  export *
+}
