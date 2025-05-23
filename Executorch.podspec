@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name             = "Executorch"
-  s.version          = "0.1.3"
+  s.version          = "0.1.5"
   s.author           = { 'Cat' => 'a599231042@gmail.com' }
   s.license          = { :type => "BSD" }
   s.homepage         = "https://docs.pytorch.org/executorch/stable/index.html"
 #   s.source           = { :path => '.' }
-  s.source           = { :git => 'https://github.com/cat-x/Executorch_Pod', :tag => '0.1.3' }
+  s.source           = { :git => 'https://github.com/cat-x/Executorch_Pod', :tag => '0.1.5' }
   s.summary          = "The executorch library for iOS"
   s.description      = "The executorch library for iOS."
   s.platforms        = { :ios => "17.0" }
@@ -25,7 +25,8 @@ Pod::Spec.new do |s|
 
   s.pod_target_xcconfig = {
     "HEADER_SEARCH_PATHS" => '$(inherited) "$(PODS_ROOT)/Executorch/install/include/"',
-    "VALID_ARCHS" => "x86_64 arm64"
+    "VALID_ARCHS" => "arm64"
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "x86_64";
   }
 
 #  s.libraries = ["c++", "stdc++", "sqlite3"]
