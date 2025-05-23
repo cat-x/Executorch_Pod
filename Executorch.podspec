@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => "BSD" }
   s.homepage         = "https://docs.pytorch.org/executorch/stable/index.html"
 #   s.source           = { :path => '.' }
-  s.source           = { :git => 'https://github.com/pytorch/executorch.git', :tag => 'swiftpm-0.6.0' }
+  s.source           = { :git => 'httpshttps://github.com/cat-x/Executorch_Pod', :tag => '0.1.0' }
   s.summary          = "The executorch library for iOS"
   s.description      = "The executorch library for iOS."
   s.platforms        = { :ios => "14.0" }
