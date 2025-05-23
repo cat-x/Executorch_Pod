@@ -25,8 +25,8 @@ Pod::Spec.new do |s|
 
   s.pod_target_xcconfig = {
     "HEADER_SEARCH_PATHS" => '$(inherited) "$(PODS_ROOT)/Executorch/install/include/"',
-    "VALID_ARCHS" => "arm64"
-    "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "x86_64";
+    "VALID_ARCHS" => "arm64",
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]" => "x86_64"
   }
 
 #  s.libraries = ["c++", "stdc++", "sqlite3"]
