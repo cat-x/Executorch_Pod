@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name             = "Executorch"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.author           = { 'Cat' => 'a599231042@gmail.com' }
   s.license          = { :type => "BSD" }
   s.homepage         = "https://docs.pytorch.org/executorch/stable/index.html"
 #   s.source           = { :path => '.' }
-  s.source           = { :git => 'https://github.com/cat-x/Executorch_Pod', :tag => '0.1.2' }
+  s.source           = { :git => 'https://github.com/cat-x/Executorch_Pod', :tag => '0.1.3' }
   s.summary          = "The executorch library for iOS"
   s.description      = "The executorch library for iOS."
   s.platforms        = { :ios => "17.0" }
@@ -14,12 +14,12 @@ Pod::Spec.new do |s|
   s.user_target_xcconfig = {
     "HEADER_SEARCH_PATHS" => '$(inherited) "$(PODS_ROOT)/Executorch/install/include/"',
 #     "OTHER_LDFLAGS" => '$(inherited) -force_load "$(PODS_ROOT)/Executorch/install/lib/libexecutorch_ios.a" -force_load "$(PODS_ROOT)/Executorch/install/lib/libbackend_coreml_ios.a" -force_load "$(PODS_ROOT)/Executorch/install/lib/libbackend_mps_ios.a" -force_load "$(PODS_ROOT)/Executorch/install/lib/libbackend_xnnpack_ios.a" -force_load "$(PODS_ROOT)/Executorch/install/lib/libkernels_optimized_ios.a" -force_load "$(PODS_ROOT)/Executorch/install/lib/libkernels_quantized_ios.a" -force_load "$(PODS_ROOT)/Executorch/install/lib/libkernels_custom_ios.a" -force_load "$(PODS_ROOT)/Executorch/install/lib/libkernels_portable_ios.a"',
-    "OTHER_LDFLAGS" => '$(inherited) -force_load "$(PODS_ROOT)/Executorch/install/lib/libexecutorch_ios.a" -force_load "$(PODS_ROOT)/Executorch/install/lib/libbackend_coreml_ios.a" -force_load "$(PODS_ROOT)/Executorch/install/lib/libbackend_mps_ios.a" -force_load "$(PODS_ROOT)/Executorch/install/lib/libbackend_xnnpack_ios.a" -force_load "$(PODS_ROOT)/Executorch/install/lib/libkernels_optimized_ios.a" -force_load "$(PODS_ROOT)/Executorch/install/lib/libkernels_quantized_ios.a"',
+    "OTHER_LDFLAGS" => '$(inherited) "-lc++" -force_load "$(PODS_ROOT)/Executorch/install/lib/libexecutorch_ios.a" -force_load "$(PODS_ROOT)/Executorch/install/lib/libbackend_coreml_ios.a" -force_load "$(PODS_ROOT)/Executorch/install/lib/libbackend_mps_ios.a" -force_load "$(PODS_ROOT)/Executorch/install/lib/libbackend_xnnpack_ios.a" -force_load "$(PODS_ROOT)/Executorch/install/lib/libkernels_optimized_ios.a" -force_load "$(PODS_ROOT)/Executorch/install/lib/libkernels_quantized_ios.a"',
 #      "OTHER_LDFLAGS" => '-force_load "$(PODS_ROOT)/Executorch/install/lib/libbackend_coreml_ios.a" -force_load "$(PODS_ROOT)/Executorch/install/lib/libexecutorch_ios.a"',
     "CLANG_CXX_LANGUAGE_STANDARD" => "c++17",
     "CLANG_ENABLE_OBJC_WEAK" => "YES",
-    "GCC_C_LANGUAGE_STANDARD" => "c17",
-    "CLANG_CXX_LIBRARY" => "libc++"
+    "GCC_C_LANGUAGE_STANDARD" => "c17"
+#     "CLANG_CXX_LIBRARY" => "libc++"
 #    "OTHER_CPLUSPLUSFLAGS" => "-std=c++17 -stdlib=libc++"
   }
 
