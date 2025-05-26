@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name             = "Executorch"
-  s.version          = "0.1.7"
+  s.version          = "0.1.8"
   s.author           = { 'Cat' => 'a599231042@gmail.com' }
   s.license          = { :type => "BSD" }
   s.homepage         = "https://docs.pytorch.org/executorch/stable/index.html"
 #   s.source           = { :path => '.' }
-  s.source           = { :git => 'https://github.com/cat-x/Executorch_Pod', :tag => '0.1.7' }
+  s.source           = { :git => 'https://github.com/cat-x/Executorch_Pod', :tag => '0.1.8' }
   s.summary          = "The executorch library for iOS"
   s.description      = "The executorch library for iOS."
   s.platforms        = { :ios => "14.0" }
