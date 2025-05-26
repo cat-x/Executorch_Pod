@@ -5,9 +5,10 @@
  * This source code is licensed under the BSD-style license found in the
  * LICENSE file in the root directory of this source tree.
  */
+#pragma once
 
-#import "ExecuTorchError.h"
-#import "ExecuTorchLog.h"
-#import "ExecuTorchModule.h"
-#import "ExecuTorchTensor.h"
-#import "ExecuTorchValue.h"
+#include "ExecuTorchError.h"
+#include "ExecuTorchLog.h"
+#include "ExecuTorchModule.h"
+#include "ExecuTorchTensor.h"
+#include "ExecuTorchValue.h"
